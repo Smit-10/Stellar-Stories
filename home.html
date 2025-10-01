@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <section class="hero">
+      <video autoplay muted loop playsinline>
+        <source src="Images/solarVideo.mp4" type="video/mp4" />
+      </video>
+    </section>
+
+    <nav class="navOuter hidden-nav">
+      <div class="navbar">
+        <h2 class="logo">Stellar Storytellers</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Quiz</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <main>
+      <div class="page-inner">
+        <div class="container hidden">
+          <div class="box one">
+            <div><img src="Images/CME.jpg" alt="CME"></div>
+            <div><a href="CME.html">Coronal Mass Ejection(CME)</a></div>
+          </div>
+
+          <div class="box two">
+            <div><img src="Images/Solar_Flare_Logo.jpg" alt="Solar Flare"></div>
+            <div><a href="#">Solar Flare</a></div>
+          </div>
+
+          <div class="box three">
+            <div><img src="Images/Geomagnetic_Storm_Logo.jpg" alt="Geomagnetic Storm"></div>
+            <div><a href="#">Geomagnetic Storm</a></div>
+          </div>
+        </div>
+
+        <div class="container hidden">
+          <div class="box four">
+            <div class="xxx"><img src="Images/Supernova_Explosion_Logog.jpg" alt="Supernova Explosion"></div>
+            <div><a href="#">Supernova Explosion</a></div>
+          </div>
+
+          <div class="box five">
+            <div><img src="Images/MeteorShower_logo.jpg" alt="Meteor Shower"></div>
+            <div><a href="#">Meteor Shower</a></div>
+          </div>
+
+          <div class="box six">
+            <div><img src="Images/Aurora_logo.jpg" alt="Aurora"></div>
+            <div><a href="#">Aurora</a></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script>
+      /*const btn = document.querySelector(".start-btn");*/
+      const nav = document.querySelector(".navOuter");
+      const hiddenElems = document.querySelectorAll(".hidden");
+      const body = document.body;
+
+    //   btn.addEventListener("click", () => {
+        // enable scrolling after button click
+        // body.classList.remove("no-scroll");
+
+        // scroll down smoothly
+        nav.scrollIntoView({ behavior: "smooth" });
+
+        // animate navbar fast
+        gsap.to(nav, {
+          opacity: 1,
+          y: 0,
+          duration: 0.6,
+          ease: "power2.out",
+        });
+
+        // animate content slowly after navbar
+        setTimeout(() => {
+          gsap.to(hiddenElems, {
+            opacity: 1,
+            y: 0,
+            duration: 1.2,
+            stagger: 0.3,
+            ease: "power2.out",
+          });
+        }, 800);
+    //   });
+
+    
+    </script>
+</body>
+</html>

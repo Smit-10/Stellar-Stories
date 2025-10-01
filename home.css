@@ -1,0 +1,124 @@
+* { 
+    margin:0; 
+    padding:0; 
+    box-sizing:border-box; 
+}
+body { 
+    font-family: "Roboto", sans-serif; 
+    background-image: linear-gradient(to top left,#000,#000,#000); 
+    color:#fff; 
+}
+
+/* HERO */
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.hero video {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* NAVBAR */
+.navOuter {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+}
+.navbar {
+    max-width: 1150px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 14px 24px;
+    border-radius: 20px;
+    background-color: rgba(83,80,80,0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar ul { 
+    display:flex; gap:30px; list-style:none; 
+}
+.navbar a { 
+    text-decoration:none; color:#fff; }
+
+.page-inner {
+  max-width: 1150px;   
+  width: 90%;
+  margin: 40px auto;
+  position: absolute;
+  left:55px;
+  top: 100px;
+}
+.container {
+  display:flex;
+  flex-wrap: wrap;
+  gap:24px;
+  /* justify-content: space-evenly; */
+  margin-bottom:32px;
+}
+.one,.two,.three,.four,.five,.six {
+  background-color: rgba(255,255,255,0.1);
+  border: 1px solid #fff;
+  height: 300px;
+  flex-basis: 300px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  border-radius: 8px;
+}
+
+.box img{
+  top: 0;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.box a {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 8px;
+  text-decoration: none;
+}
+
+/* Initially hidden for animation */
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+@media (max-width: 768px) {
+  /* On screens 768px or less */
+
+  .navbar {
+    flex-direction: column; /* Stack the logo and nav links vertically */
+    gap: 15px;
+  }
+
+  .navbar ul {
+    flex-direction: column; /* Stack the nav links themselves vertically */
+    gap: 10px;
+    align-items: center; /* Center the text */
+  }
+
+  .container {
+    flex-direction: column; /* Stack the three boxes vertically */
+    align-items: center; /* Center them in the container */
+  }
+
+  .one,.two,.three,.four,.five,.six {
+    width: 100%; /* Make the boxes take the full width of their container */
+    max-width: 350px; /* Optional: Prevent them from becoming overly wide on wide tablets */
+    flex-basis: auto; /* Reset flex-basis for column layout */
+  }
+}
