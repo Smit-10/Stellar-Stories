@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="geoStorm.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="hero">
+      <img src="Images/bgimage.jpg" alt="">
+    </section>
+
+    <nav class="navOuter hidden-nav">
+      <div class="navbar">
+        <h2 class="logo">Stellar Storytellers</h2>
+        <ul>
+          <li><a href="home.html">Stories</a></li>
+          <li><a href="#">Quiz</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="story hidden">
+      <h1 style="text-align: center;">Geomagnetic Storm</h1>
+      <h2>Earth's Ticklish Moment</h2>
+
+        <p class="capital">Planet Earth was a busy place, always spinning, always orbiting, always protected by an amazing invisible shield. This shield wasn't like a superhero's cape; it was made of two very special things: the atmosphere (the air around us) and the magnetic field (like a giant, invisible magnet that wraps around Earth, reaching far out into space!).</p>
+
+        <p>Far, far away, our friendly neighborhood Sun, Sol, was a bustling place too. Sometimes, Sol would get extra excited and have a huge solar flare (a super-bright burst of light and energy, like a giant sneeze!). Other times, he would let out a big bubble of super-fast particles, like a cosmic burp, called a Coronal Mass Ejection, or CME.</p>
+
+        <div class="inner-div1">
+          <img class="geo" src="Images/geo1.jpg" alt="">
+          <div class="inner-div2">
+            <p>One day, Sol let out a really big CME – a colossal bubble of charged particles, speeding across space towards Earth!</p>
+
+            <p>"Uh oh," thought Dr. Astra, a super-smart space scientist on Earth. "Looks like a big one is headed our way! Earth is about to get a cosmic tickle!"</p>
+          </div>
+        </div>
+
+        <p>When this giant bubble of Sun-stuff reached Earth, it didn't just bounce off. Instead, it pressed against Earth's invisible magnetic shield. Imagine trying to push a giant, invisible balloon into a strong gust of wind. The wind pushes back, right?</p>
+
+        <p>Well, that's what happened! The Sun's fast-moving particles began to push, stretch, and even temporarily squish Earth's magnetic field.</p>
+
+        <div class="inner-div">
+          <div class="inner-div2">
+              <p><strong>WOOOOSH!</strong></p>
+
+              <p>When Earth's magnetic shield got pushed and squished like that, it wobbled and vibrated. This big shake-up of Earth's magnetic field is called a <strong>Geomagnetic Storm</strong>!</p>
+
+              <p>It was like Earth was having a super-duper, cosmic tickle attack!</p>
+
+              <p>Now, you might be thinking, "What happens when Earth gets tickled?"</p>
+          </div>
+
+          <img class="geo" src="Images/geo2.jpg" alt="">
+
+        </div>
+
+        <p>Well, remember those beautiful auroras – the Northern and Southern Lights? During a geomagnetic storm, those charged particles from the Sun get pushed even further down into Earth's atmosphere than usual. That means the auroras become super bright and can sometimes be seen in places where you don't normally see them, much closer to the middle of Earth! It's like the sky's light show gets turned up to max volume!</p>
+
+        <p>But sometimes, if the tickle is really, really strong, it can cause other things to wiggle and wobble too:</p>
+
+        <ul>
+        <li><strong>Radio Confusion:</strong> Sometimes, radio signals might get a little fuzzy or crackly, like when you can't quite tune into your favorite music station.</li>
+        <li><strong>Satellite Stumbles:</strong> The satellites high above Earth, which help us with TV, phones, and GPS, might get a little confused for a short time, like they're trying to find their way in a wobbly magnetic field.</li>
+        <li><strong>Power Play:</strong> In very, very strong storms, sometimes the huge power lines on Earth can feel a tiny electrical surge, which power companies need to watch carefully.</li>
+        </ul>
+
+        <div class="inner-div">
+          <img class="geo" src="Images/geo3.jpg" alt="">
+          <div class="inner-div2">
+            <p>"Don't worry," Dr. Astra told her team. "We knew this cosmic tickle was coming! Our scientists are always watching the Sun, so we can prepare."</p>
+
+            <p>And just like a tickle attack eventually stops, the geomagnetic storm would pass. Earth's amazing magnetic field would spring back into shape, calm and strong again, ready to protect us. The Sun's energy would flow away, and everything would return to normal.<p>
+          </div>       
+        </div>
+
+        <p>So, a geomagnetic storm is like Earth having a moment of cosmic excitement – a big, beautiful light show, and a little bit of a tickle, reminding us that even though space is far away, everything is connected in our amazing solar system!</p>
+    </section>
+
+  <script>
+  window.addEventListener("load", () => {
+    const story = document.querySelector(".story");
+    
+    // Delay appearance by 0.5 seconds
+    setTimeout(() => {
+      story.classList.add("show");
+    }, 500);
+  });
+</script>
+</body>
+</html>
