@@ -71,7 +71,8 @@ body {
   width: 90%;
   margin: 140px auto;
   position: absolute;
-  left:55px;
+  left:50px;
+  right: 50px;
   top: 100px;
 }
 
