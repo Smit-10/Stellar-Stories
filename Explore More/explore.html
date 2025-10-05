@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="explore.css">
+</head>
+
+<body>
+  <section class="hero">
+    <video autoplay muted loop playsinline>
+      <source src="/Images/solarVideo.mp4" type="video/mp4" />
+    </video>
+  </section>
+
+  <nav class="navOuter hidden-nav">
+    <div class="navbar">
+      <h2 class="logo">Stellar Storytellers</h2>
+      <ul>
+        <li><a href="/home.html">Home</a></li>
+        <li><a href="explore.html">Explore More</a></li>
+        <li><a href="/Quiz/quiz.html">Quiz</a></li>
+        <li><a href="/about.html">About Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--INTRO-->
+  <section class="intro hidden">
+    <div class="innerDiv">
+      <h2>Journey to the Edge of Reality</h2>
+      <p>
+        Venture beyond the familiar phenomena of our solar system and into the deepest cosmic mysteries. Here, we explore the very fabric of spacetime, from the universe's explosive beginning in the <strong>Big Bang</strong> to the enigmatic pull of <strong>black holes</strong>. Grapple with the invisible forces of <strong>dark matter</strong> and <strong>dark energy</strong>, witness stars being born in majestic <strong>nebulae</strong>, and travel to the countless <strong>exoplanets</strong> that orbit distant suns.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <main>
+    <div class="page-inner">
+      <div class="container hidden">
+        <div class="box one">
+            <div><a href="bigbang.html"><img src="/Images/bigbang_logo.jpg" alt="Big Bang Theory"></a></div>
+            <div><a href="bigbang.html">Big Bang Theory</a></div>
+        </div>
+
+        <div class="box two">
+            <div><a href="darkenergy.html"><img src="/Images/darkenergy_logo.jpg" alt="DarkEnergy"></a></div>
+            <div><a href="darkenergy.html">Dark Energy and Dark Matter</a></div>
+        </div>
+
+        <div class="box three">
+            <div><a href="wormhole.html"><img src="/Images/wormhole1.png" alt="Wormhole"></a></div>
+            <div><a href="wormhole.html">Worm Holes</a></div>
+        </div>
+      </div>
+
+      <div class="container hidden">
+        <div class="box four">
+            <div><a href="blackhole.html"><img src="/Images/blackhole_logo.jpg" alt="Blackhole"></a>
+            </div>
+            <div><a href="blackhole.html">Black Hole</a></div>
+        </div>
+
+        <div class="box five">
+            <div><a href="nebulae.html"><img src="/Images/nebulae_logo.jpg" alt="Nebulae"></a></div>
+            <div><a href="nebulae.html">Nebulae</a></div>
+        </div>
+
+        <div class="box six">
+            <div><a href="exoplanet.html"><img src="/Images/exoplanet_logo.jpg" alt="Exoplanet"></a></div>
+            <div><a href="exoplanet.html">Exoplanets</a></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <script>
+    const nav = document.querySelector(".navOuter");
+    const hiddenElems = document.querySelectorAll(".hidden");
+    const body = document.body;
+
+    // scroll down smoothly
+    nav.scrollIntoView({ behavior: "smooth" });
+
+    // animate navbar fast
+    gsap.to(nav, {
+      opacity: 1,
+      y: 0,
+      duration: 0.6,
+      ease: "power2.out",
+    });
+
+    // animate content slowly after navbar
+    setTimeout(() => {
+      gsap.to(hiddenElems, {
+        opacity: 1,
+        y: 0,
+        duration: 1.2,
+        stagger: 0.3,
+        ease: "power2.out",
+      });
+    }, 800);
+
+  </script>
+</body>
+
+</html>

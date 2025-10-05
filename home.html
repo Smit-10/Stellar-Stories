@@ -1,109 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="home.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="home.css">
 </head>
+
 <body>
-    <section class="hero">
-      <video autoplay muted loop playsinline>
-        <source src="Images/solarVideo.mp4" type="video/mp4" />
-      </video>
-    </section>
+  <section class="hero">
+    <video autoplay muted loop playsinline>
+      <source src="Images/solarVideo.mp4" type="video/mp4" />
+    </video>
+  </section>
 
-    <nav class="navOuter hidden-nav">
-      <div class="navbar">
-        <h2 class="logo">Stellar Storytellers</h2>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Quiz</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </div>
-    </nav>
+  <nav class="navOuter hidden-nav">
+    <div class="navbar">
+      <h2 class="logo">Stellar Storytellers</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Explore More/explore.html">Explore More</a></li>
+        <li><a href="Quiz/quiz.html">Quiz</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- CONTENT -->
-    <main>
-      <div class="page-inner">
-        <div class="container hidden">
-          <div class="box one">
+  <!--INTRO-->
+  <section class="intro hidden">
+    <div class="innerDiv">
+      <h2>Explore the Wonders of Space Weather</h2>
+      <p>
+        Discover the cosmic events that shape our universe — from blazing solar flares to powerful geomagnetic storms.
+        Click on any phenomenon to learn more about its story and impact on Earth.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <main>
+    <div class="page-inner">
+      <div class="container hidden">
+        <div class="box one">
+          <video class="box-background-video" src="Images/hoverVideo2.mp4" loop muted playsinline></video>
+          <div class="box-background-content">
             <div><a href="CME.html"><img src="Images/CME.jpg" alt="CME"></a></div>
             <div><a href="CME.html">Coronal Mass Ejection(CME)</a></div>
           </div>
+        </div>
 
-          <div class="box two">
+        <div class="box two">
+          <video class="box-background-video" src="Images/hoverVideo3.mp4" loop muted playsinline></video>
+          <div class="box-background-content">
             <div><a href="Sflare.html"><img src="Images/Solar_Flare_Logo.jpg" alt="Solar Flare"></a></div>
             <div><a href="Sflare.html">Solar Flare</a></div>
           </div>
+        </div>
 
-          <div class="box three">
+        <div class="box three">
+          <video class="box-background-video" src="Images/hoverVideo4.mp4" loop muted playsinline></video>
+          <div class="box-background-content">
             <div><a href="geoStorm.html"><img src="Images/Geomagnetic_Storm_Logo.jpg" alt="Geomagnetic Storm"></a></div>
             <div><a href="geoStorm.html">Geomagnetic Storm</a></div>
           </div>
         </div>
+      </div>
 
-        <div class="container hidden">
-          <div class="box four">
-            <div><a href="supernove.html"><img src="Images/Supernova_Explosion_Logog.jpg" alt="Supernova Explosion"></a></div>
+      <div class="container hidden">
+        <div class="box four">
+          <video class="box-background-video" src="Images/hoverVideo5.mp4" loop muted playsinline></video>
+          <div class="box-background-content">
+            <div><a href="supernove.html"><img src="Images/Supernova_Explosion_Logog.jpg" alt="Supernova Explosion"></a>
+            </div>
             <div><a href="supernove.html">Supernova Explosion</a></div>
           </div>
+        </div>
 
-          <div class="box five">
+        <div class="box five">
+          <video class="box-background-video" src="Images/hoverVideo.mp4" loop muted playsinline></video>
+          <div class="box-background-content">
             <div><a href="meteor.html"><img src="Images/MeteorShower_logo.jpg" alt="Meteor Shower"></a></div>
             <div><a href="meteor.html">Meteor Shower</a></div>
           </div>
+        </div>
 
-          <div class="box six">
+        <div class="box six">
+          <video class="box-background-video" src="Images/bgvideo6.mp4" loop muted playsinline></video>
+          <div class="box-background-content">
             <div><a href="aurora.html"><img src="Images/Aurora_logo.jpg" alt="Aurora"></a></div>
             <div><a href="aurora.html">Aurora</a></div>
           </div>
         </div>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
-    <script>
-      /*const btn = document.querySelector(".start-btn");*/
-      const nav = document.querySelector(".navOuter");
-      const hiddenElems = document.querySelectorAll(".hidden");
-      const body = document.body;
+  <script>
+    const nav = document.querySelector(".navOuter");
+    const hiddenElems = document.querySelectorAll(".hidden");
+    const body = document.body;
 
-    //   btn.addEventListener("click", () => {
-        // enable scrolling after button click
-        // body.classList.remove("no-scroll");
+    // scroll down smoothly
+    nav.scrollIntoView({ behavior: "smooth" });
 
-        // scroll down smoothly
-        nav.scrollIntoView({ behavior: "smooth" });
+    // animate navbar fast
+    gsap.to(nav, {
+      opacity: 1,
+      y: 0,
+      duration: 0.6,
+      ease: "power2.out",
+    });
 
-        // animate navbar fast
-        gsap.to(nav, {
-          opacity: 1,
-          y: 0,
-          duration: 0.6,
-          ease: "power2.out",
-        });
+    // animate content slowly after navbar
+    setTimeout(() => {
+      gsap.to(hiddenElems, {
+        opacity: 1,
+        y: 0,
+        duration: 1.2,
+        stagger: 0.3,
+        ease: "power2.out",
+      });
+    }, 800);
 
-        // animate content slowly after navbar
-        setTimeout(() => {
-          gsap.to(hiddenElems, {
-            opacity: 1,
-            y: 0,
-            duration: 1.2,
-            stagger: 0.3,
-            ease: "power2.out",
-          });
-        }, 800);
-    //   });
+    const allBoxes = document.querySelectorAll('.box');
 
-    
-    </script>
+    allBoxes.forEach(box => {
+      // Find the video using the new class name
+      const video = box.querySelector('.box-background-video');
+
+      box.addEventListener('mouseenter', () => {
+        if (video) {
+          video.play();
+        }
+      });
+
+      box.addEventListener('mouseleave', () => {
+        if (video) {
+          video.pause();
+          video.currentTime = 0;
+        }
+      });
+    });
+
+  </script>
 </body>
+
 </html>

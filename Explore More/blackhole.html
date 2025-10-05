@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black Hole</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="blackhole.css">
+</head>
+
+<body>
+  <section class="hero">
+    <video autoplay muted loop playsinline>
+      <source src="/Images/solarVideo.mp4" type="video/mp4" />
+    </video>
+  </section>
+
+  <nav class="navOuter hidden-nav">
+    <div class="navbar">
+      <h2 class="logo">Stellar Storytellers</h2>
+      <ul>
+        <li><a href="/home.html">Stories</a></li>
+        <li><a href="explore.html">Explore More</a></li>
+        <li><a href="/Quiz/quiz.html">Quiz</a></li>
+        <li><a href="/about.html">About Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="story hidden">
+    <h1 style="text-align:center">Black Hole</h1>
+    <h2 class="capital">🌌 Ava and the Mystery of the Black Hole</h2>
+
+    <video class="black" loop controls>
+      <source src="/Images/blackholeVideo.mp4" type="video/mp4" />
+    </video>
+    <p>Ava and her friends were on a night sky camp organized by the school. They were lying on soft blankets on a hill,
+      staring up at the sparkling sky.</p>
+
+    <p>“Look at all those stars!” Ava said, pointing excitedly.</p>
+
+    <p>Her friend, Ravi, shivered. “Some stars are so far away, it’s like they’re in another world!”</p>
+
+    <p>Just then, their guide, Mr. Orion, who loved teaching about space, crouched beside them. “Have you ever heard of
+      a <strong>black hole</strong>?” he asked.</p>
+
+    <p>Ava shook her head. “No… what’s that?”</p>
+    <div class="inner-div">
+      <div class="inner-div1">
+    <p>Mr. Orion smiled and held a small dark ball from his backpack. “A black hole is like a <strong>giant cosmic
+        vacuum cleaner</strong>, but much stronger than anything on Earth. Imagine a star that was <strong>super
+        huge</strong>. When it reaches the end of its life, it can <strong>collapse under its own weight</strong>,
+      shrinking smaller and smaller… until it becomes a black hole.”</p>
+      <p>Ravi’s eyes went wide. “So… it just disappears?”</p>
+      </div>
+      <img class="blackhole" src="/Images/blackhole1.jpg" alt="Black Hole">
+    </div>
+
+    <p>“Not exactly,” Mr. Orion said. “A black hole doesn’t swallow everything in the universe, just what comes too
+      close. Its gravity is so strong that <strong>even light can’t escape!</strong>”</p>
+
+    <p>Ava leaned forward. “Even light? But <strong>how can we see it then?</strong>”</p>
+
+    <p>“That’s the cool part,” Mr. Orion said, pointing to a glowing ring around the ball. “<strong>We can’t see a black
+        hole directly</strong>, but we can see how it affects everything nearby. Stars and gas swirl around it, and
+      that’s how we know it’s there.”</p>
+
+    <p>Ava imagined herself floating in space, watching a black hole swirl like a giant cosmic whirlpool, stars spinning
+      around it like a merry-go-round.</p>
+    
+    <div class="inner-div">
+      <img class="blackhole" src="/Images/blackhole2.jpg" alt="Black Hole">
+      <div class="inner-div2">
+    <p>“So black holes aren’t just scary,” she said, “they’re like <strong>space mysteries waiting to be
+        explored!</strong>”</p>
+
+    <p>Mr. Orion nodded. “Exactly! Scientists are still learning about them, and who knows — maybe one of you will
+      discover something new about black holes one day.”</p>
+
+    <p>Ava looked up at the night sky again. Somewhere out there, among billions of stars, a black hole was quietly
+      <strong>bending space and time</strong> — a cosmic secret she was determined to understand.</p>
+      </div>
+    </div>
+    <div class="navigation">
+    <a href="wormhole.html" class="arrow left">&#8592;</a>
+
+    <a href="nebulae.html" class="arrow right">&#8594;</a>
+  </div>
+  </section>
+  <script>
+    window.addEventListener("load", () => {
+      const story = document.querySelector(".story");
+
+      // Delay appearance by 0.5 seconds
+      setTimeout(() => {
+        story.classList.add("show");
+      }, 500);
+    });
+  </script>
+
+</body>
+
+</html>

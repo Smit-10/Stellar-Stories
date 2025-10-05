@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nebulae</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="nebulae.css">
+</head>
+
+<body>
+  <section class="hero">
+    <video autoplay muted loop playsinline>
+      <source src="/Images/solarVideo.mp4" type="video/mp4" />
+    </video>
+  </section>
+
+  <nav class="navOuter hidden-nav">
+    <div class="navbar">
+      <h2 class="logo">Stellar Storytellers</h2>
+      <ul>
+        <li><a href="/home.html">Stories</a></li>
+        <li><a href="explore.html">Explore More</a></li>
+        <li><a href="/Quiz/quiz.html">Quiz</a></li>
+        <li><a href="/about.html">About Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="story hidden">
+    <h1 style="text-align:center">Nebulae</h1>
+    <h2>🌌 Zara and the Cosmic Clouds</h2>
+
+    <video class="neb" loop controls>
+      <source src="/Images/nebulaeVideo.mp4" type="video/mp4" />
+    </video>
+    <p class="capital">Zara and her little brother, Leo, were on a night camping trip with their astronomy club. They
+      lay on the soft grass, staring at the sky as the stars twinkled like glitter scattered across a dark velvet
+      blanket.</p>
+
+    <p>“Look at that colorful cloud over there!” Leo pointed to a faint, glowing patch in the sky.</p>
+    
+    <div class="inner-div">
+      <div class="inner-div1">
+    <p>Their guide, Captain Nova, who was dressed like a space explorer, smiled. “Ah, you’ve spotted a
+      <strong>nebula</strong>!”</p>
+
+    <p>“A nebula?” Zara asked, sitting up. “What’s that?”</p>
+
+    <p>Captain Nova knelt beside them and pulled out a bright, swirling scarf from his backpack. “A nebula is like a
+      giant cosmic cloud made of gas and dust. Some nebulae are the <strong>birthplaces of stars</strong>, while others
+      are the <strong>remnants of stars that have exploded</strong>.”</p>
+    <p>Leo’s eyes went wide. “So <strong>stars come from clouds?</strong>”</p>
+    </div>
+    <img class="nebulae" src="/Images/nebulae2.jpg" alt="Nebulae">
+    </div>
+
+    <p>“Yes!” Captain Nova nodded. “Imagine this scarf is a nebula. Tiny particles inside it stick together over
+      millions of years, and eventually, a star is born right in the middle of the cloud. Nebulae are like the
+      <strong>nurseries of the universe!</strong>”</p>
+
+    <p>Zara twirled the scarf in her hands. “Wow… so these colorful clouds are full of new stars waiting to shine?”</p>
+    
+    <div class="inner-div">
+    <img class="nebulae" src="/Images/nebulae1.jpg" alt="Nebulae">
+    <div class="inner-div2">
+    <p>“Exactly,” said Captain Nova. “Some nebulae glow because of the light from young stars inside them, while others
+      shine because they reflect the light of nearby stars. They come in all shapes and colors — pink, blue, purple —
+      like <strong>cosmic paintings</strong>.”</p>
+
+    <p>Leo leaned back and imagined floating through the nebula, colorful clouds swirling all around him, new stars
+      sparkling like diamonds.</p>
+    </div>
+    </div>
+    
+    <p>“Space is full of wonders,” Captain Nova said, looking up at the sky. “And nebulae are some of the most
+      beautiful. Who knows — maybe one day, one of you will discover a brand new nebula in the universe!”</p>
+
+    <p>Zara smiled, hugging Leo. “I want to see them all… every glowing cloud, every new star. The universe is like a
+      <strong>giant art gallery!</strong>”</p>
+    <div class="navigation">
+    <a href="blackhole.html" class="arrow left">&#8592;</a>
+
+    <a href="exoplanet.html" class="arrow right">&#8594;</a>
+  </div>
+  </section>
+  <script>
+    window.addEventListener("load", () => {
+      const story = document.querySelector(".story");
+
+      // Delay appearance by 0.5 seconds
+      setTimeout(() => {
+        story.classList.add("show");
+      }, 500);
+    });
+  </script>
+
+</body>
+
+</html>

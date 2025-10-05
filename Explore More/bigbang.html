@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Big Bang Theory</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="bigbang.css">
+</head>
+
+<body>
+  <section class="hero">
+    <video autoplay muted loop playsinline>
+      <source src="/Images/solarVideo.mp4" type="video/mp4" />
+    </video>
+  </section>
+
+  <nav class="navOuter hidden-nav">
+    <div class="navbar">
+      <h2 class="logo">Stellar Storytellers</h2>
+      <ul>
+        <li><a href="/home.html">Stories</a></li>
+        <li><a href="explore.html">Explore More</a></li>
+        <li><a href="/Quiz/quiz.html">Quiz</a></li>
+        <li><a href="/about.html">About Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="story hidden">
+    <h1 style="text-align:center">Big Bang Theory</h1>
+    <h2>🌟 Leo and the Big Bang Adventure</h2>
+
+    <video class="big" loop controls>
+      <source src="/Images/bigbangVideo.mp4" type="video/mp4" />
+    </video>
+    <div class="inner-div">
+      <div class="inner-div2">
+        <p class="capital">Leo and his classmates were on a school trip to the science park. The sun was setting, and
+          the sky slowly turned dark, revealing thousands of twinkling stars.</p>
+
+        <p>“Wow!” Leo whispered, pointing to the sky. “There are so many stars!”</p>
+
+        <p>Ms. Vega, their science guide, smiled. “Yes, Leo. Have you ever wondered <strong>where all these stars,
+            planets, and galaxies came from?</strong>”</p>
+      </div>
+      <img class="bigbang" src="/Images/bigbang2.jpg" alt="Big Bang">
+    </div>
+
+    <p>Leo tilted his head. “Hmm… where did they come from?”</p>
+
+    <p>Ms. Vega held up a tiny glowing marble she had brought for the trip. “Imagine that all the stars, planets, and
+      even space itself were packed into this tiny dot. <strong>Smaller than the tip of your pencil!</strong>”</p>
+
+    <p>Leo’s eyes grew wide. “<strong>Everything… in one dot?</strong>”</p>
+
+    <div class="inner-div">
+      <img class="bigbang1" src="/Images/bigbang1.jpg" alt="Big Bang">
+      <div class="inner-div2">
+        <p>“Yes,” Ms. Vega nodded. “Then, about <strong>13.8 billion years ago</strong>, that dot <strong>suddenly expanded</strong>. Space itself stretched out, creating the universe. That moment is called the <strong>Big Bang</strong>.”</p>
+        <p>She tossed the marble gently in the air. “As the universe grew, it cooled down. Tiny particles formed, then atoms, then stars, then galaxies. Over millions of years, planets formed around some stars — including <strong>our Earth!</strong>”</p>
+        <p>Leo pointed to a bright star. “So that star out there… it started from the Big Bang too?”</p>
+      </div>
+    </div>
+
+    <p>“Exactly!” Ms. Vega said. “<strong>Everything you see in the sky today</strong> — stars, planets, galaxies —
+      began from that tiny dot and kept growing.”</p>
+
+    <p>Leo looked around at his friends lying on the grass, gazing at the stars. “Wow… the universe is like a giant
+      adventure story, <strong>still happening right now!</strong>”</p>
+
+    <p>Ms. Vega smiled. “Yes, Leo. And who knows? Maybe one day, one of you will discover even more secrets about it.
+      But always remember: <strong>it all started with a Big Bang</strong>.”</p>
+    <div class="navigation">
+    <a href="exoplanet.html" class="arrow left">&#8592;</a>
+
+    <a href="darkenergy.html" class="arrow right">&#8594;</a>
+  </div>
+  </section>
+  <script>
+    window.addEventListener("load", () => {
+      const story = document.querySelector(".story");
+
+      // Delay appearance by 0.5 seconds
+      setTimeout(() => {
+        story.classList.add("show");
+      }, 500);
+    });
+  </script>
+
+</body>
+
+</html>

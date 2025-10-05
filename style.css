@@ -31,15 +31,21 @@ body {
     font-size: 18px;
     border: none;
     border-radius: 28px;
-    background: rgba(255,255,255,0.9);
-    color:#111;
+    background: linear-gradient(to top left, grey , rgb(43, 40, 40) , rgb(32, 32, 30));
+    color:#fff;
     cursor:pointer;
     z-index: 5;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .start-btn a{
   text-decoration: none;
   color: #000;
+}
+
+.start-btn:hover{
+    box-shadow: 1px 1px 8px gray;
+    transform: translateX(-50% ) translateY(5px);
 }
 
 /* NAVBAR */

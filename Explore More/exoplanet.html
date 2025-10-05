@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exoplanets</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="exoplanet.css">
+</head>
+
+<body>
+  <section class="hero">
+    <video autoplay muted loop playsinline>
+      <source src="/Images/solarVideo.mp4" type="video/mp4" />
+    </video>
+  </section>
+
+  <nav class="navOuter hidden-nav">
+    <div class="navbar">
+      <h2 class="logo">Stellar Storytellers</h2>
+      <ul>
+        <li><a href="/home.html">Stories</a></li>
+        <li><a href="explore.html">Explore More</a></li>
+        <li><a href="/Quiz/quiz.html">Quiz</a></li>
+        <li><a href="/about.html">About Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="story hidden">
+    <h1 style="text-align:center">Exoplanets</h1>
+    <h2>🌍 Lily and the Mystery of Exoplanets</h2>
+
+    <video class="exo" loop controls>
+      <source src="/Images/exoplanetVideo.mp4" type="video/mp4" />
+    </video>
+      <p class="capital">Lily and her dad, Mr. Carter, were on a vacation in the mountains, far away from city lights. At night, they
+        sat on a blanket outside their cabin, gazing up at the sky full of twinkling stars.</p>
+
+      <p>“Dad,” Lily asked, pointing at a bright star, “do stars have planets like Earth around them?”</p>
+      
+      <div class="inner-div">
+      <img class="exoplanet" src="/Images/exoplanet2.jpg" alt="">
+      <div class="inner-div1">
+      <p>Mr. Carter smiled and handed her a small telescope. “Yes, Lily! Planets that orbit stars outside our solar
+        system are called <strong>exoplanets</strong>. There are <strong>thousands of them</strong>, and they’re all
+        different, just like people.”</p>
+
+      <p>Lily’s eyes widened. “Thousands? Are they big like Jupiter or small like Mercury?”</p>
+
+      <p>“<strong>All kinds of sizes!</strong>” said Mr. Carter. “Some are giant gas planets, even bigger than Jupiter.
+        Others are rocky, like Earth. Some are too hot, some are freezing cold, and some might even have water — who
+        knows, <strong>maybe even life!</strong>”</p>
+      </div>
+      </div>
+
+      <p>Lily imagined herself in a spaceship, zooming from one exoplanet to another. One planet was pink and shiny,
+        another had purple skies, and one had rings like Saturn.</p>
+
+      <p>“Wow,” Lily whispered. “So there’s a <strong>whole universe of planets out there waiting to be
+          explored?</strong>”</p>
+
+      <p>“Exactly,” said Mr. Carter, smiling. “Astronomers use telescopes and space missions to find these exoplanets.
+        Sometimes they see them when the planet passes in front of its star, <strong>blocking a tiny bit of the star’s
+          light</strong>. That’s how they know the planet is there.”</p>
+        
+      <div class="inner-div">
+      <div class="inner-div2">
+      <p>Lily looked through the telescope and imagined herself visiting a new world, discovering mountains, oceans, and
+        alien skies. “Dad, I want to be an explorer and <strong>find new exoplanets someday!</strong>”</p>
+
+      <p>Mr. Carter laughed. “With curiosity like yours, Lily, maybe you will. The universe is huge and full of
+        surprises, and exoplanets are just one of its <strong>amazing mysteries</strong>.”</p>
+
+      <p>Lily snuggled closer to her dad, her eyes sparkling like the stars above, dreaming of all the incredible worlds
+        waiting to be discovered.</p>
+      </div>
+      <img class="exoplanet" src="/Images/exoplanet1.jpg" alt="Exoplanet">
+      </div>
+    <div class="navigation">
+    <a href="nebulae.html" class="arrow left">&#8592;</a>
+
+    <a href="bigbang.html" class="arrow right">&#8594;</a>
+  </div>
+  </section>
+  <script>
+    window.addEventListener("load", () => {
+      const story = document.querySelector(".story");
+
+      // Delay appearance by 0.5 seconds
+      setTimeout(() => {
+        story.classList.add("show");
+      }, 500);
+    });
+  </script>
+
+</body>
+
+</html>
